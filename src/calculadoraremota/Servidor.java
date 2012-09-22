@@ -8,8 +8,8 @@ import java.rmi.registry.Registry;
 import org.apache.log4j.Logger;
 
 /**
- *
- * @author thiago
+ * Classe Servidor 
+ * @author Rafhael Cunha, Matheus Dal Forno, Thiago Krug, Bruno Vicelli
  */
 public class Servidor {
     
