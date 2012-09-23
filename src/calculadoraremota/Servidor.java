@@ -8,13 +8,16 @@ import java.rmi.registry.Registry;
 import org.apache.log4j.Logger;
 
 /**
- * Classe Servidor 
+ * Classe Servidor  
  * @author Rafhael Cunha, Matheus Dal Forno, Thiago Krug, Bruno Vicelli
  */
 public class Servidor {
     
     public static Logger logger = Logger.getLogger(Servidor.class);
 
+    /**
+     * String que passa o endereço do Host
+     */
     public final static String HOST_URL = "rmi://127.0.0.1/Operacoes";
 
     public void iniciar() {

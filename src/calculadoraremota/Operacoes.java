@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 import rmi.IOperacoes;
 
 /**
- * Classe Operaçoes
+ * Classe Operaçoes Extends UnicastRemoteObject
  * @author Rafhael Cunha, Matheus Dal Forno, Thiago Krug, Bruno Vicelli
  */
 public class Operacoes extends UnicastRemoteObject implements IOperacoes {
