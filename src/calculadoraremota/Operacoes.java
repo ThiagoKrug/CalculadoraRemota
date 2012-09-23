@@ -6,65 +6,43 @@ import org.apache.log4j.Logger;
 import rmi.IOperacoes;
 
 /**
- * Classe Operaçoes Extends UnicastRemoteObject
- * @author Rafhael Cunha, Matheus Dal Forno, Thiago Krug, Bruno Vicelli
+ * Classe que implementa os métodos da interface {@link IOperacoes}. É a
+ * responsável pelos cálculos vindos do cliente.
+ *
+ * @author Bruno Vicelli
+ * @author Matheus Dal Forno
+ * @author Rafhael Rodrigues Cunha
+ * @author Thiago Cassio Krug
  */
 public class Operacoes extends UnicastRemoteObject implements IOperacoes {
-    
+
     public static Logger logger = Logger.getLogger(Operacoes.class);
 
     /**
-     * Método Construtor
-     * @throws RemoteException 
+     * Método construtor
+     *
+     * @throws RemoteException
      */
     public Operacoes() throws RemoteException {
         logger.info("Objeto de Operações vinculado");
     }
 
     @Override
-    /**
-     * Método soma
-     * @param a
-     * @param b
-     * @return soma de a por b.
-     * @throws RemoteException 
-     */
     public double soma(double a, double b) throws RemoteException {
         return a + b;
     }
 
     @Override
-    /**
-     * Método subtrai
-     * @param a
-     * @param b
-     * @return subtração de a por b.
-     * @throws RemoteException 
-     */
     public double subtrai(double a, double b) throws RemoteException {
         return a - b;
     }
 
     @Override
-    /**
-     * Método multiplica
-     * @param a
-     * @param b
-     * @return mutiplicação de a por b.
-     * @throws RemoteException 
-     */
     public double multiplica(double a, double b) throws RemoteException {
         return a * b;
     }
 
     @Override
-    /**
-     * Método divide
-     * @param a
-     * @param b
-     * @return divisão de a por b.
-     * @throws RemoteException 
-     */
     public double divide(double a, double b) throws RemoteException {
         return a / b;
     }
